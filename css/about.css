@@ -1,0 +1,339 @@
+@chartset:"urf-8";
+a,a:hover,a:focus,a:active{
+    color:inherit;
+    text-decoration: none;
+}
+#all{
+	height: auto;
+	background-color: gray;
+	font-family: 'cwTeXHei', sans-serif;	
+}
+#portal{
+	height: 90vh;
+	background-image: url('../img/about_portal.jpg');
+	background-size: cover;
+
+}
+#list{
+	height: 100px;
+	background-color:rgba(255, 255,255, 0.3);
+	padding-top: 10px;
+	z-index: 2;
+}
+.fix{
+	position: fixed;
+}
+#logo{
+	height: 80px;
+	width: 80px;
+	float: left;
+	margin-right: -80px;
+	background-image: url('../img/logo.png');
+	background-size: cover;		
+}
+#logo:hover{
+	opacity: 0.5;
+}
+#nav{
+	height: 80px;
+	width: 750px;
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#Nabout{
+	height: 30px;
+	width: 240px;
+	margin-right: 15px;
+	float: left;
+	padding-left: 63px;
+	padding-top: 4px;
+	background-color: rgba(0,0,0, 0.3);
+    border-radius: 2px;
+    color:white;
+}
+.now>#Nabout{
+	color: black;
+}
+
+
+#Nabout:hover{
+	opacity: 0.5;
+}
+#Nabout:active{
+	background-color: white;
+}
+
+.Nmenu {
+    height: 30px;
+	width: 240px;
+    background-color: rgba(0,0,0, 0.3);
+    color: white;
+	padding-top: 4px;
+    border-radius: 2px;
+    margin-right: 15px;
+    border: none;
+    cursor: pointer;
+   
+}
+.Nmenu:hover{
+	opacity: 0.5;
+}
+.Nmenu:active{
+	background-color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#Nshop{
+	height: 30px;
+	width: 240px;
+	float: left;
+	padding-left: 84px;
+	padding-top: 4px;
+	background-color: rgba(0,0,0, 0.3);
+    border-radius: 2px;
+    color:white;
+}
+#Nshop:hover{
+	opacity: 0.5;
+}
+#Nshop:active{
+	background-color: white;
+}
+#about{
+    height: 90vh;
+	background-image: url('../img/about_about_background.jpg');
+	padding-top: 45vh;
+	background-size: cover;
+}
+#about_pic{
+	width: 292px;
+	height: 375px;
+	background-image: url('../img/about_about_pic.png');
+	background-size: cover;
+	margin-top: -80px;
+	margin-right: -292px;
+}
+#about_text{
+    width: 600px;
+    height: 365px;
+	margin-top: -182.5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#essence{
+    height: 90vh;
+	background-image: url('../img/logo_background.jpg');
+	background-size: cover;
+	padding-top: 45vh;
+}
+
+#essence_box{
+	height: 460px;
+	width: 620px;
+	margin-top: -230px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 90px;
+}
+#essense_title{
+	width: 30px;
+	height: 300px;
+	float: left;
+	margin-right: 80px;
+	margin-top: -90px;
+}
+#essence_text{
+	width: 400px;
+	height: 215px;
+	background-image: url('../img/about_essence_text.png');
+	background-size: cover;
+	float: left;
+	margin-right: 80px;
+}
+#essence_logo{
+	width: 30px;
+	height: 180px;
+	background-image: url('../img/about_essence_logo.png');
+	background-size: cover;
+	float: left;
+	margin-top: 190px;
+
+}
+
+#origin{
+    height: 50vh;
+	background-image: url('../img/about_produce_bg.jpg');
+	
+	padding-top: 25vh;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+#origin_box{
+	width: 1100px;
+	height: 170px;
+	margin-top: -85px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+
+}
+#origin_block{
+    width: 100px;
+    height: 100px;
+    background-image:url('../img/about_origin.png');
+    float: left;
+	position:absolute;
+	left:212px;
+	top:35px;
+	color: white;
+    
+}
+#origin_pic{
+    width: 262px;
+    height: 170px;
+	background-image: url('../img/about_origin_pic.jpg');
+	background-size: cover;
+    float: left;
+    
+}
+
+#origin_text{
+    width: 838px;
+    height: 170px;
+    background-color: white;
+	float: left;
+	padding-left: 60px;
+	padding-top: 50px;
+    
+}
+
+#produce{
+    height: 50vh;
+	background-image: url('../img/about_produce_bg.jpg');
+	padding-top: 25vh;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+#produce_box{
+	width: 1100px;
+	height: 170px;
+	margin-top: -85px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+
+}
+#produce_block{
+    width: 100px;
+    height: 100px;
+    background-image:url('../img/about_produce.png');
+    float: left;
+	position:absolute;
+	left:212px;
+	top:35px;
+    
+}
+#produce_pic{
+    width: 262px;
+    height: 170px;
+    background-image: url('../img/about_produce_pic.jpg');
+    background-size: cover;
+    float: left;
+    
+}
+
+#produce_text{
+    width: 838px;
+    height: 170px;
+    background-color: white;
+	float: left;
+	padding-left: 60px;
+	padding-top: 50px;
+    
+}
+#footer{
+	height: 40vh;
+	background-color: rgba(47,60,28,1);
+	margin-right: -15px;
+	margin-left: -15px;
+	padding-top: 20vh;
+}
+#information{
+	height: 180px;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -90px;
+}
+#name{
+	height: 50px;
+	width: 750px;
+	background-color: white;
+	margin-bottom: 25px;
+	padding-top: 12px;
+	padding-left: 10px;
+	border-radius: 2px;
+}
+#phone{
+	height: 30px;
+	width: 228px;
+	background-color: white;
+	margin-bottom: 25px;
+	float: left;
+	margin-right: 25px;
+	padding-top: 5px;
+	padding-left: 10px;	 
+	border-radius: 2px;
+}
+#address{
+	height: 30px;
+	width: 497px;
+	background-color: white;
+	margin-bottom: 25px;
+	float: left;
+	padding-top: 4px;
+	padding-left: 10px;	
+	border-radius: 2px;
+}
+#reference{
+	height: 50px;
+	width: 750px;
+	background-color: white;
+	clear: left;
+	padding-top: 12px;
+	padding-left: 10px;
+	border-radius: 2px;
+}

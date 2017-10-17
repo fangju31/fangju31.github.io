@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/cwtexhei.css">
+  </head>
+  <body>
+    <div id="all" class="container-fluid">
+      <div id="portal"  class="row">
+        <div id="list" class="container-fluid">
+          <a href="index_home.html"><div id="logo"></div></a>
+          <div id="nav" class="row">
+            <a  class="now" href="about.html"><div id="Nabout">關於宇治金太郎</div></a>
+            <div class="dropdown">
+                    <a href="menu.html"><button class="Nmenu">商品訊息</button></a>
+                    <div class="dropdown-content">
+                      <a href="menu.html#tea">金太郎茶飲</a>
+                      <a href="menu.html#dessert">金太郎甜點</a>
+                      <a href="menu.html#ice">金太郎冰品</a>
+                    </div>
+                  </div>
+          <a href="shop.html"><div id="Nshop">店面情報</div></a>
+        </div>
+        </div>
+      </div>        
+     <div id="about" class="row">
+      <div id="about_pic"></div>
+      <div id="about_text">
+        <h1 style="padding-left:130px;font-weight:bold">宇治金太郎的出生</h1>
+        <p></p>
+        <p style="padding-left:120px">宇治金太郎是由宇治與金太郎兩個詞語所組成的。</p>
+        <p style="padding-left:140px">宇治為抹茶的象徵，而金太郎則代表紅豆。</p>
+        <p style="padding-left:105px">據說抹茶傳入日本後，第一顆茶苗是在京都宇治種下的，</p>
+        <p style="padding-left:8px">而後宇治茶受到織田信長武將等人的愛戴，他們的茶會也獨佔使用宇治的「抹茶」。</p>
+        <p style="padding-left:165px">後來宇治也逐漸變成抹茶的代表詞。</p>
+        <p style="padding-left:120px">金太郎為日本傳說故事裡的人物，又名坂田金時。</p>
+        <p style="padding-left:180px">在傳說中，金時的臉是赤紅色的，
+        <p style="padding-left:65px">因此後來形容紅豆煮過的顏色紅潤飽滿，就像坂田金時(金太郎)一樣。</p>
+      </div>
+          
+     </div>
+     <div id="essence" class="row" >
+       <div id="essence_box">
+       <div id="essense_title"><h3 style="font-weight: bold">宇治金太郎的三大堅持</h3></div>
+       <div id="essence_text"></div>
+       <div id="essence_logo"></div>
+      </div>
+     </div>
+     <div id="origin">
+       <div id="origin_box">
+        <div id="origin_pic"></div>
+            <div id="origin_block"></div>
+            <div id="origin_text"><p>在整個抹茶製作流程裡，南投廠只是粗製廠，
+              從儲菁開始，共經過五大步驟，六小程序，每份茶葉都得歷經</p>
+              三點五小時以上的時間才會完成粗製過程。</div>    
+          </div>
+     </div>
+     <div id="produce">
+       <div id="produce_box">
+            <div id="produce_pic"></div>
+            <div id="produce_block"></div>
+            <div id="produce_text"><p>粗製結束後，廠方會將原葉送至位於
+              桃園大溪的精緻廠進行更費公的四百五十目日式低溫極細研磨，
+              最後才</p>成為宇治金太郎所使用的純抹茶粉。
+            </div>
+          </div>
+     </div>
+
+      <div id="footer">
+      <div id="information">
+        <div id="name">宇治金太郎 UjiKintarou</div>
+        <div id="phone">04-22115566</div>
+        <div id="address">台中市西區公益路100號</div>
+        <div id="reference">參考網站: <a href="http://tw.gigacircle.com/3016591-1">http://tw.gigacircle.com/3016591-1</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(function() {
+          //卷軸捲動時會被觸發的事件
+          
+          //console.log($(window).scrollTop()); 目前捲軸高度
+          //console.log($(window).height()); 目前螢幕高度
+
+          var windows_height = $(window).height();
+          var windows_scroll = $(window).scrollTop();
+
+          if(windows_scroll > windows_height ){ //如果捲軸高度 > 目前螢幕高度
+              //顯示box (display,block)
+              $("#list").addClass('fix');
+              
+
+          }else{ //如果捲軸高度 < 目前螢幕高度
+
+              //隱藏box
+              $("#list").removeClass('fix');
+          }
+
+      });
+  </script> 
+  </body>
+</html>

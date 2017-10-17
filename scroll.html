@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 2000px;
+        }
+
+        .box{
+            position: fixed;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+        .d-none{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="box" class="box d-none"></div>
+
+
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            //卷軸捲動時會被觸發的事件
+            
+            //console.log($(window).scrollTop()); 目前捲軸高度
+            //console.log($(window).height()); 目前螢幕高度
+
+            var windows_height = $(window).height();
+            var windows_scroll = $(window).scrollTop();
+
+            if(windows_scroll > windows_height ){ //如果捲軸高度 > 目前螢幕高度
+                //顯示box (display,block)
+                $("#box").removeClass('d-none');
+                
+
+            }else{ //如果捲軸高度 < 目前螢幕高度
+
+                //隱藏box
+                $("#box").addClass('d-none');
+            }
+
+        });
+    </script>
+
+</body>
+</html>

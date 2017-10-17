@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/cwtexhei.css">
+  </head>
+  <body>
+    <div id="all" class="container-fluid">
+      <div id="portal"  class="row">
+        <div id="list" class="container-fluid">
+          <a href="index_home.html"><div id="logo"></div></a>
+          <div id="nav" class="row">
+            <a href="about.html"><div id="Nabout">關於宇治金太郎</div></a>
+            <div class="dropdown">
+                    <a href="menu.html"><button class="Nmenu">商品訊息</button></a>
+                    <div class="dropdown-content">
+                      <a href="menu.html#tea">金太郎茶飲</a>
+                      <a href="menu.html#dessert">金太郎甜點</a>
+                      <a href="menu.html#ice">金太郎冰品</a>
+                    </div>
+                  </div>
+          <a class="now" href="shop.html"><div id="Nshop">店面情報</div></a>
+        </div>
+        </div>
+      </div>        
+      <div id="shop" class="row">
+        <div id="shop_box">
+          <div id="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5913890547317!2d120.6596673149891!3d24.150983984393488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9e98d9c4db%3A0x14b6b6e8775e8b6d!2zNDAz5Y-w5Lit5biC6KW_5Y2A5YWs55uK6LevMTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1505876177276" width="510" height="460" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+          <div id="message">
+              <h1>宇治金太郎 UjiKintarou</h1>
+              <p></p>
+              <p><b>金太郎時間</b></p>
+              <p>10:00-21:00</p>
+              
+              <p><b>聯絡金太郎</b></p>
+              <p>04-22115566</p>
+              
+              <p/><b>來找金太郎</b></p>
+              <p>台中市西區公益路100號</p>
+          </div>
+          
+        </div>
+      </div>
+      <div id="footer">
+      <div id="information">
+        <div id="name">宇治金太郎 UjiKintarou</div>
+        <div id="phone">04-22115566</div>
+        <div id="address">台中市西區公益路100號</div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(function() {
+          //卷軸捲動時會被觸發的事件
+          
+          //console.log($(window).scrollTop()); 目前捲軸高度
+          //console.log($(window).height()); 目前螢幕高度
+
+          var windows_height = $(window).height();
+          var windows_scroll = $(window).scrollTop();
+
+          if(windows_scroll > windows_height ){ //如果捲軸高度 > 目前螢幕高度
+              //顯示box (display,block)
+              $("#list").addClass('fix');
+              
+
+          }else{ //如果捲軸高度 < 目前螢幕高度
+
+              //隱藏box
+              $("#list").removeClass('fix');
+          }
+
+      });
+  </script>
+
+
+  </body>
+</html>

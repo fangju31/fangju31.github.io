@@ -1,0 +1,32 @@
+@chartset:"urf-8";
+a,a:hover,a:focus,a:active{
+    color:inherit;
+    text-decoration: none;
+}
+#intro{
+    width: 100%;
+    height: auto;
+}
+#intro_portal{
+	height: 100vh;
+	padding-top: 46vh;
+	padding-left: 69%;
+	background-image: url('../img/intro_portal.jpg');
+	background-size: cover;
+}
+#intro_logo{
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	background-image: url('../img/logo-12.svg');
+	background-size: cover;
+}
+.into:hover{
+	background-color: rgba(210, 210, 210, 0.5);
+	border-radius: 10px;
+}
+.into:active{
+	background-color: rgba(255, 255, 255, 0.8);
+}
